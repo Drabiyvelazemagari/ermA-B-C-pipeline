@@ -6,6 +6,7 @@ The pipeline processes MGE datasets by filtering low-confidence predictions, map
 The graphical user interface enables users to provide input files, specify output parameters, and execute the pipeline without requiring command-line interaction. Built-in validation ensures that input files contain the required structure, and stepwise logging provides transparency throughout the analysis. The pipeline outputs both detailed per-element datasets and summarized accession-level tables, facilitating downstream statistical analysis and interpretation. Overall, this tool is intended to support large-scale comparative studies of antimicrobial resistance gene mobility and to provide insights into the mechanisms underlying the dissemination of erm genes across diverse bacterial hosts.
 
 How to run:
-cd "C:\Users\User\Desktop\DATOS FILE\erm project\ermB\ermB_seqdump.fasta.split"
-pip install pandas pyqt6
-python erm_pipeline_gui.py
+
+
+-- pip install pandas pyqt6
+-- python erm_pipeline_gui.py
