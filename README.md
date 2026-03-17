@@ -5,6 +5,28 @@ The pipeline processes MGE datasets by filtering low-confidence predictions, map
 
 The graphical user interface enables users to provide input files, specify output parameters, and execute the pipeline without requiring command-line interaction. Built-in validation ensures that input files contain the required structure, and stepwise logging provides transparency throughout the analysis. The pipeline outputs both detailed per-element datasets and summarized accession-level tables, facilitating downstream statistical analysis and interpretation. Overall, this tool is intended to support large-scale comparative studies of antimicrobial resistance gene mobility and to provide insights into the mechanisms underlying the dissemination of erm genes across diverse bacterial hosts.
 
+
+## Dependencies and Data Sources
+
+This pipeline relies on external tools and databases for MGE detection and annotation:
+
+- **MEFinder** — used for detection of mobile genetic elements (MGEs)  
+- **ISFinder** — used for classification of insertion sequences (IS) into families  
+
+Users are expected to generate MGE input files using MEFinder and provide IS family mappings derived from ISFinder.
+
+---
+
+## Citation
+
+If you use this pipeline in your research, please also cite the following resources:
+
+- **MEFinder**:  
+  Johansson MHK, Bortolaia V, Tansirichaiya S, Aarestrup FM, Roberts AP, Petersen TN. Detection of mobile genetic elements associated with antibiotic resistance in Salmonella enterica using a newly developed web tool: MobileElementFinder. J Antimicrob Chemother. 2021 Jan 1;76(1):101-109. doi: 10.1093/jac/dkaa390. PMID:   33009809; PMCID: PMC7729385.4  
+
+- **ISFinder**:  
+  Siguier P, Perochon J, Lestrade L, Mahillon J, Chandler M. ISfinder: the reference centre for bacterial insertion sequences. Nucleic Acids Res. 2006 Jan 1;34(Database issue):D32-6. doi: 10.1093/nar/gkj014. PMID: 16381877; PMCID: PMC1347377.  
+
 How to run:
 
 
