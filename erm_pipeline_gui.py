@@ -72,7 +72,7 @@ def run_pipeline(mge_path, is_db_path, members_path, cds_path, out_dir, out_name
         # =========================
         # COORDINATES
         # =========================
-        step("[5/9] Adding ermB coordinates...")
+        step("[5/9] Adding erm coordinates...")
 
         def normalize(acc):
             return acc.split(".")[0] if isinstance(acc, str) else acc
@@ -209,7 +209,7 @@ class App(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("ermB Pipeline GUI")
+        self.setWindowTitle("erm Pipeline GUI")
 
         # ✅ create and assign layout properly
         self.main_layout = QVBoxLayout()
